@@ -34,13 +34,20 @@ Audit re-run on 2026-10-24 with web search only; there was no `gh` access, so Gi
 
 `sharpen-prompt` collides with `jbrukh/skills`, which does the same job. Renaming now costs nothing: there are no installs or stars.
 
-| Candidate | Web hits for the exact name | Notes |
-|---|---|---|
-| **`brief-like-a-coworker`** (recommended) | none | Verb-led, matches the phrase people repeat ("brief it like a coworker"), and says how it differs from interview skills |
-| `goal-effort-check` | none | Names the method exactly; reads like a checklist rather than a skill |
-| `coworker-brief` | none | Shorter, but "coworker" pulls in Coworker.ai and accomplish-ai/coworker |
-| `brief-it` | none for the exact name | Crowded: `brief`, `brief-me` and `brief-builder` already exist |
-| keep `sharpen-prompt` | taken | Ranks below `jbrukh/skills` for its own name |
+Round 2 (2026-10-24): candidates built from what sets the skill apart: one paragraph; goal, effort, check; a real style reference; at most one question.
+
+| Candidate | Exact-name hits | Why | Watch out |
+|---|---|---|---|
+| **`spell-it-out`** (recommended) | none | Starts with a verb, plain English, says the job: make the unstated parts of a request explicit | Common phrase, so the About text and topics carry search |
+| `three-line-ask` | none | Ties to the "three lines" framing; hints at the output shape | "Lines" is loose; the output is one paragraph |
+| `want-try-check` | none | The method itself: what you want, how hard to try, how to check | Quirky; reads oddly at first glance |
+| `tight-brief` | none | Short; says "brief" without the interview connotation | "brief" is crowded (`brief`, `brief-builder`, `brief-me`) |
+| `clear-ask` | none | Short, says the outcome | `buiducnhat/agent-skills` has `ask`, which asks one focused question: adjacent |
+| `done-looks-like` | none | Leads with the check, the part most prompts leave out | Undersells goal and effort |
+
+Round 1, kept for reference: `brief-like-a-coworker`, `goal-effort-check` and `coworker-brief` (no hits); `brief-it` (crowded); `sharpen-prompt` (taken).
+
+Avoided: `handoff-*` (a crowded family that means session handoff), `brief-then-build` (too close to `brief-first-execution`), and any name built on a real person's name.
 
 These are web-search results only. Check `gh api "search/repositories?q=<name>+in:name"` and `topic:<name>` before you commit to a name.
 
