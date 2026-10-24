@@ -6,6 +6,36 @@
       "sourceType": "github",
       "skillPath": "plugins/caffeinity/skills/caffeinity-routing/SKILL.md",
       "computedHash": "f1c0f51842da7ffe74f546bb70108dcd4df163dc65865dd1f247aebbe2358355"
+    },
+    "draft-skill": {
+      "source": "arm-pz/draft-skill",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "33eb09602bc95bee53d1b51d2aa49c8bc8ff4101d492459b359ba80b626d4ce0"
+    },
+    "findable": {
+      "source": "arm-pz/findable",
+      "sourceType": "github",
+      "skillPath": "skills/findable/SKILL.md",
+      "computedHash": "63671856a9acc120aadb7a9a79916c077042aa5872782185a37fd78b19ac658b"
+    },
+    "prompts-to-skill-release": {
+      "source": "arm-pz/prompts-to-skill-release",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "aac8cc96f89135a4bd4b9a77952ff0af2400d96ebbd8c8ddb896238b005fc070"
+    },
+    "publish-pipeline": {
+      "source": "arm-pz/publish-pipeline",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "a2ef71c7af57816c8eeee539f4f89c5c5a1b6dec1646ce33f0dcd37cbf38dc7e"
+    },
+    "upstream-check": {
+      "source": "arm-pz/upstream-check",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "f955289ef7e9a321c62df9f6211144ecbd972114225184f75e481355211fac4a"
     }
   }
 }

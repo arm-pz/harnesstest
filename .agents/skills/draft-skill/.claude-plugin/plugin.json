@@ -1,0 +1,9 @@
+{
+  "name": "draft-skill",
+  "version": "0.1.0",
+  "description": "Creates a new agent skill from an idea: confirms the purpose before writing, checks installed siblings for overlap, splits scripts/references/assets, writes a description that triggers, validates with check_skill.py.",
+  "author": {
+    "name": "Abdul Rahman P Z"
+  },
+  "repository": "https://github.com/arm-pz/draft-skill"
+}
