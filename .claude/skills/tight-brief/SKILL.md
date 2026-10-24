@@ -1,6 +1,6 @@
 ---
 name: tight-brief
-description: Rewrite a rough request into a short coworker-style brief that states the goal, how much effort it deserves, and how the result will be checked, plus a concrete style reference when looks matter. Use when the user asks to "sharpen", "rewrite", "tighten" or "improve" a prompt, says "brief it like a coworker" or "make it a tight brief", "prompt it the Boris way", or pastes a request and wants a better version before any work starts. Not for writing the deliverable itself, and not for auditing a whole skill (use tune-skill).
+description: Rewrite a rough request into a short coworker-style brief that states the goal, how much effort it deserves, and how the result will be checked, plus a concrete style reference when looks matter. Use when the user asks to "sharpen", "rewrite", "tighten" or "improve" a prompt, says "brief it like a coworker" or "make it a tight brief", "prompt it the Boris way", or pastes a request and wants a better version before any work starts. Not for prompts that live in code, such as an app's system prompt (use claude-api), for writing the deliverable itself, or for auditing a skill (use tune-skill).
 ---
 
 # Tight brief

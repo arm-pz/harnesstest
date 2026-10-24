@@ -15,7 +15,7 @@ Format follows tune-skill's `references/test-cases.md`. Judged from the `descrip
 | 5 | "Claude keeps half-doing my requests. Here's one, fix how I'm asking: migrate the tests to vitest" | tight-brief | implicit trigger; asks at most one question | PASS |
 | 6 | "My skill's description doesn't trigger, tighten it" | tune-skill | tight-brief not loaded | PASS (explicit "Not for auditing a whole skill") |
 | 7 | "What should this button say?" | design:ux-copy | tight-brief not loaded | PASS |
-| 8 | "Improve the system prompt in my agent's `prompts.py`" | claude-api | tight-brief not loaded | FAIL: "improve a prompt" in the description matches. The boundary between a prompt you type and a prompt inside an app is not stated |
+| 8 | "Improve the system prompt in my agent's `prompts.py`" | claude-api | tight-brief not loaded | PASS after fix: the description now says "Not for prompts that live in code, such as an app's system prompt (use claude-api)" |
 
 ## Boundary pairs
 
@@ -29,4 +29,4 @@ Format follows tune-skill's `references/test-cases.md`. Judged from the `descrip
 ## Not verified
 
 - Real model triggering. These are description-level judgements.
-- Case 8 is unfixed pending a decision on whether app prompts are in scope.
+- Scope confirmed with the user on 2026-10-24: only requests a person types to Claude; prompts in code go to claude-api.
