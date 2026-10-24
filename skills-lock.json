@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "caffeinity-routing": {
+      "source": "arm-pz/caffeinity-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/caffeinity/skills/caffeinity-routing/SKILL.md",
+      "computedHash": "f1c0f51842da7ffe74f546bb70108dcd4df163dc65865dd1f247aebbe2358355"
+    }
+  }
+}
