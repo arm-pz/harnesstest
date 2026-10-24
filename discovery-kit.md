@@ -4,10 +4,21 @@ Drafted with the `findable` workflow on 2026-10-24. Nothing below has been appli
 
 ## 0. Baseline
 
-- The skill lives at `.claude/skills/sharpen-prompt/` inside `arm-pz/harnesstest`, a test repo with one commit. It has no standalone repo, no README, no license and no release, so nobody can find or install it yet.
-- **Same-name project:** `jbrukh/skills` ships a skill named `sharpen-prompt` (listed on vibeindex.ai, about 29 installs, added 2026-02-12). It refines prompts by pulling out intent and asking follow-up questions. **Same job, different method.** Any search for the name lands there first.
-- Adjacent skills found by task search: `prompt-optimizer` (affaan-m), `craft-critique` / `craft-scaffold` (sungjunlee/craftkit), `improving-prompts` (cachemoney), `delegation-brief` (KirKruglov/claude-skills-kit). None writes the specific goal / effort / check brief.
-- Star counts and search positions were not measured: no `gh` access in this session, web search only.
+Audit re-run on 2026-10-24 with web search only; there was no `gh` access, so GitHub-side counts were not measured. Star and install numbers are as the directory listings report them.
+
+**Our skill:** inside `arm-pz/harnesstest` (a test repo, 2 commits). It has no standalone repo, README, license or release. It doesn't appear for any query below.
+
+| Query | Found? | Who shows up instead | Where they're listed |
+|---|---|---|---|
+| claude code skill rewrite my request into a better prompt | no | `Terryc21/prompter` (rewrites prompts, shows them for approval), `krishamaze/writing-agent-prompts` | GitHub mirror, skills.sh |
+| claude skill rewrite rough request better prompt | no | `prompt-optimizer` (affaan-m), `craft-critique` (sungjunlee/craftkit), `improving-prompts` (cachemoney) | agentskillsfinder, skills.sh, llmbase |
+| turn a vague request into a brief before building | no | `brief-builder` (mohitagw15856/pm-claude-skills, ~1,240 stars, interviews one question at a time), `brief-first-execution` (markoblogo, 2 stars) | claudeskills.info, agentskill.sh |
+| goal effort verification prompt skill | no | `goal-loop`, `verify` (oh-my-claudecode), `effort-calibrator` | tessl, skillselion, skillsdirectory |
+| "sharpen-prompt" | no | `jbrukh/skills` → `sharpen-prompt` (~29 installs, same job) | vibeindex |
+
+**What sets us apart, and what to lead with:** the others either interview you (brief-builder, sharpen-prompt) or rewrite freely (prompter, prompt-optimizer). This one writes one fixed shape (goal, effort, check, plus a real style reference) and asks at most one question.
+
+**Metadata gaps:** no repo description, topics, license, release, README or social preview.
 
 ## 1. Target queries
 
@@ -21,8 +32,17 @@ Drafted with the `findable` workflow on 2026-10-24. Nothing below has been appli
 
 ## 2. Name decision (yours)
 
-- **Keep `sharpen-prompt`** and qualify it everywhere ("goal, effort, check brief"). It will rank below `jbrukh/skills` for its own name.
-- **Rename now**, while installs are zero. Candidates: `brief-it`, `coworker-brief`. Neither turned up in one web search; GitHub name and topic counts were not checked.
+`sharpen-prompt` collides with `jbrukh/skills`, which does the same job. Renaming now costs nothing: there are no installs or stars.
+
+| Candidate | Web hits for the exact name | Notes |
+|---|---|---|
+| **`brief-like-a-coworker`** (recommended) | none | Verb-led, matches the phrase people repeat ("brief it like a coworker"), and says how it differs from interview skills |
+| `goal-effort-check` | none | Names the method exactly; reads like a checklist rather than a skill |
+| `coworker-brief` | none | Shorter, but "coworker" pulls in Coworker.ai and accomplish-ai/coworker |
+| `brief-it` | none for the exact name | Crowded: `brief`, `brief-me` and `brief-builder` already exist |
+| keep `sharpen-prompt` | taken | Ranks below `jbrukh/skills` for its own name |
+
+These are web-search results only. Check `gh api "search/repositories?q=<name>+in:name"` and `topic:<name>` before you commit to a name.
 
 ## 3. GitHub listing (for a standalone repo)
 
