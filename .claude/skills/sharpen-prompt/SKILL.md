@@ -7,7 +7,7 @@ description: Rewrite a rough request into a short coworker-style brief that stat
 
 Turn the user's request into a one-paragraph brief, the way you would brief a capable coworker: no role-play ("You are an expert…"), no templates, no headings. Just what's wanted, how hard to try, and how to know it's done.
 
-Based on a prompting pattern shared by Boris Cherny (creator of Claude Code): *"Narrate the entire episode, focus on the business wisdom. Use lots of tokens. Iterate till you're proud of it. New Yorker or NYT data viz vibes."*
+Based on a prompting pattern attributed to Boris Cherny (creator of Claude Code) in an October 2026 post; the exact wording is unverified. The example prompt: *"Narrate the entire episode, focus on the business wisdom. Use lots of tokens. Iterate till you're proud of it. New Yorker or NYT data viz vibes."*
 
 ## The three parts (plus one)
 
