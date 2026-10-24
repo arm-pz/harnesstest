@@ -38,12 +38,23 @@ Round 2 (2026-10-24): candidates built from what sets the skill apart: one parag
 
 | Candidate | Exact-name hits | Why | Watch out |
 |---|---|---|---|
-| **`spell-it-out`** (recommended) | none | Starts with a verb, plain English, says the job: make the unstated parts of a request explicit | Common phrase, so the About text and topics carry search |
+| `spell-it-out` (see audit below) | none | Starts with a verb, plain English, says the job: make the unstated parts of a request explicit | Common phrase, so the About text and topics carry search |
 | `three-line-ask` | none | Ties to the "three lines" framing; hints at the output shape | "Lines" is loose; the output is one paragraph |
 | `want-try-check` | none | The method itself: what you want, how hard to try, how to check | Quirky; reads oddly at first glance |
 | `tight-brief` | none | Short; says "brief" without the interview connotation | "brief" is crowded (`brief`, `brief-builder`, `brief-me`) |
 | `clear-ask` | none | Short, says the outcome | `buiducnhat/agent-skills` has `ask`, which asks one focused question: adjacent |
 | `done-looks-like` | none | Leads with the check, the part most prompts leave out | Undersells goal and effort |
+
+**Round 2 findable audit** (GitHub-only web search for each exact name, 2026-10-24; star counts not measured):
+
+| Candidate | Same-name projects | Collision type | Verdict |
+|---|---|---|---|
+| **`tight-brief`** | none; the phrase appears in agent-workflow PRs (shenxingy/Clade, modelplan) meaning "a concise task brief" | none, and the phrase already means what the skill does | **Recommended** |
+| `want-try-check` | none | none | Cleanest, but nobody searches the phrase, so the About text carries everything |
+| `three-line-ask` | none | none | Clean; "three lines" over-promises the shape |
+| `done-looks-like` | none as a repo; a common heading in issue templates and AI prompt guidance; `rolldabones/definition-of-done` | adjacent (definition of done) | Easy to drown in the generic phrase |
+| `clear-ask` | `Sunilanbarasu/Clearask`, which turns confusing messages into clarifying questions | **adjacent, same audience** | Avoid |
+| `spell-it-out` | `Tinux-18/spell-it-out`, `Caldwerl/spell-it-out`, `blguerin/Spell_It_Out`, `EarthmanMuons/spellout`, all spelling tools | unrelated, but the name reads as spelling to search engines | Downgraded from round-2 pick |
 
 Round 1, kept for reference: `brief-like-a-coworker`, `goal-effort-check` and `coworker-brief` (no hits); `brief-it` (crowded); `sharpen-prompt` (taken).
 
