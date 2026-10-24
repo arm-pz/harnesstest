@@ -1,9 +1,9 @@
 ---
-name: sharpen-prompt
-description: Rewrite a rough request into a short coworker-style brief that states the goal, how much effort it deserves, and how the result will be checked, plus a concrete style reference when looks matter. Use when the user asks to "sharpen", "rewrite", "tighten" or "improve" a prompt, says "brief it like a coworker", "prompt it the Boris way", or pastes a request and wants a better version before any work starts. Not for writing the deliverable itself, and not for auditing a whole skill (use tune-skill).
+name: tight-brief
+description: Rewrite a rough request into a short coworker-style brief that states the goal, how much effort it deserves, and how the result will be checked, plus a concrete style reference when looks matter. Use when the user asks to "sharpen", "rewrite", "tighten" or "improve" a prompt, says "brief it like a coworker" or "make it a tight brief", "prompt it the Boris way", or pastes a request and wants a better version before any work starts. Not for writing the deliverable itself, and not for auditing a whole skill (use tune-skill).
 ---
 
-# Sharpen prompt
+# Tight brief
 
 Turn the user's request into a one-paragraph brief, the way you would brief a capable coworker: no role-play ("You are an expert…"), no templates, no headings. Just what's wanted, how hard to try, and how to know it's done.
 
@@ -26,7 +26,7 @@ Based on a prompting pattern attributed to Boris Cherny (creator of Claude Code)
 ## Output
 
 ```
-**Sharpened request**
+**Tight brief**
 
 <one paragraph: goal → effort → check → (look)>
 

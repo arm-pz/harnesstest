@@ -1,4 +1,4 @@
-# Discovery kit: sharpen-prompt
+# Discovery kit: tight-brief
 
 Drafted with the `findable` workflow on 2026-10-24. Nothing below has been applied; every public change waits for a go-ahead.
 
@@ -30,7 +30,9 @@ Audit re-run on 2026-10-24 with web search only; there was no `gh` access, so Gi
 6. add a style reference to my prompt instead of "clean"
 7. boris cherny prompting method skill
 
-## 2. Name decision (yours)
+## 2. Name decision
+
+**Decided 2026-10-24: `tight-brief`.** The skill was renamed from `sharpen-prompt`. The notes below are kept as the record.
 
 `sharpen-prompt` collides with `jbrukh/skills`, which does the same job. Renaming now costs nothing: there are no installs or stars.
 
@@ -75,25 +77,23 @@ Agent skill that rewrites a rough request into a one-paragraph brief: what you w
 ## 4. README opening
 
 ```markdown
-# sharpen-prompt
+# tight-brief
 
 An agent skill for Claude Code that turns a rough request into a short brief, the way you'd brief a coworker: the goal, how hard to try, and how to check the result. When looks matter it names a real reference ("NYT data viz") instead of "clean". If something important is missing, it asks you one question.
 
-    npx skills add OWNER/REPO --skill sharpen-prompt
+    npx skills add OWNER/REPO --skill tight-brief
 
 Ask it things like:
 - "Sharpen this before you start: build me a signups dashboard"
 - "Brief it like a coworker: a landing page for my bakery"
 - "Fix how I'm asking: migrate the tests to vitest"
-
-Not related to the `sharpen-prompt` skill in `jbrukh/skills`, which refines prompts through follow-up questions.
 ```
 
-The install line assumes the skill moves to `skills/sharpen-prompt/` in its own repo. It has not been tested.
+The install line assumes the skill moves to `skills/tight-brief/` in its own repo. It has not been tested.
 
 ## 5. Release notes
 
-`v0.1.0`: first release. One skill, `sharpen-prompt`: a one-paragraph goal / effort / check brief, an optional style reference, at most one clarifying question. Hand-run trigger cases in `tests/trigger-cases.md`.
+`v0.1.0`: first release. One skill, `tight-brief`: a one-paragraph goal / effort / check brief, an optional style reference, at most one clarifying question. Hand-run trigger cases in `tests/trigger-cases.md`.
 
 ## 6. Site page
 
